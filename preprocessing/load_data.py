@@ -34,6 +34,7 @@ def load_data(data_file_path,image_shape = (28,28),returnlabel = False):
     # print test_pix[0].shape
     # pic = Image.fromarray(test_pix[0])
     # pic.save('test.bmp','bmp')
+    print data['label'].value_counts()
     if returnlabel:
         label = data['label']
         return X,label
